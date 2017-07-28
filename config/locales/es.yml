@@ -1,0 +1,68 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  web_title: OnlineArcher
+  hello: "Hola Mundo"
+  home:
+    logo: OnlineArcher
+    menu:
+      info: ¿Qué es esto?
+      caracteristicas: Características
+      quiero_verlo: ¡Quiero Verlo!
+      contacto: Contacto
+    header:
+      boton_mas: Quiero saber más
+    banda:
+      info_title: Tenemos lo que necesitas
+      info_text: OnlineArcher es una herramienta de gestión de entrenamientos y competiciones de tiro con arco completa, que te ayudará en el día a día y mejorará tu rendimiento en el tiro sin que tengas que preocuparte de nada más.
+      info_button: ¡Registrarme ahora!
+    caracteristicas:
+      title: Qué te ofrecemos...
+    texto_gratis: OnlineArcher es gratuito
+    texto_iniciar_ahora: Iniciar ahora
+    contacto:
+      estamos: Estamos en contacto
+      texto: 'Puede que te interese contactar con nosotros, estamos a tu disposición en la siguiente dirección, ten en cuenta que esto es un proyecto en aun en ciernes...'
+    info_mail: 'OnlineArcherInfo@gmail.com'
+  score:
+    puntuar: '<i class="fa fa-fw fa-arrow-right"></i>'
+    pts: pts.
+    points: puntos
+    avg: Media
+    reset: Tocar para continuar
+    finished: Sesión finalizada, toca la pantalla para salir
+    new: '<i class="fa fa-fw fa-plus"></i> Nueva tirada'
+    create: 'Comenzar'
+    anterior: anterior
+    list_scores: Listar sesiones
+  main:
+    show: '<i class="fa fa-fw fa-binoculars"></i>'
+    edit: '<i class="fa fa-fw fa-pencil"></i>'
+    destroy: '<i class="fa fa-fw fa-times"></i>'
+    back: '<i class="fa fa-fw fa-arrow-left"></i> Volver'
+  activerecord:
+    errors:
+      models:
+        score:
+          attributes:
+            name: 
+              blank: no puede estar en blanco

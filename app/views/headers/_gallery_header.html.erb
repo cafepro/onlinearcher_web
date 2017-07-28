@@ -1,0 +1,13 @@
+<% header = Header.last %>
+<% if header.blank? %>
+	<header>
+<% else %>
+	<header style="background-image: url('<%= header.photo.url %>');">
+<% end %>
+    <div class="container">
+        <div class="intro-text gallery">
+            <div class="intro-lead-in"><%= header.description %></div>
+            <!--<a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>-->
+        </div>
+    </div>
+</header>

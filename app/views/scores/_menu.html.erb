@@ -1,0 +1,9 @@
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <%= link_to t('score.list_scores'), scores_path, remote: true %>
+        </li>
+        <%= render 'score_board' %>
+    </ul>
+</div>

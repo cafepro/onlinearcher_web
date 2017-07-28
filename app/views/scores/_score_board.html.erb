@@ -1,0 +1,12 @@
+<% acumulado = 0 %>
+<% @arrows.in_groups_of(3) do |arrow| %>
+	<% partial = arrow[0].value + arrow[1].value + arrow[2].value %>
+	<% acumulado += partial %>
+	<li>
+		<%= arrow[0].arrow %> |
+		<%= arrow[1].arrow %> |
+		<%= arrow[2].arrow %> |
+		<%= partial %> |
+		<%= acumulado %>
+	</li>
+<% end %>

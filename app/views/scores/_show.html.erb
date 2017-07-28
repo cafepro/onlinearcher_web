@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @score.name %>
+</p>
+
+<p>
+  <strong>Score type:</strong>
+  <%= @score.score_type_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @score.user_id %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @score.state %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @score.published %>
+</p>
+
+<p>
+  <strong>Points:</strong>
+  <%= @score.points %>
+</p>
+
+<p>
+  <strong>Average:</strong>
+  <%= @score.average %>
+</p>
+
+<p>
+  <strong>X count:</strong>
+  <%= @score.x_count %>
+</p>
+
+<p>
+  <strong>Ten count:</strong>
+  <%= @score.ten_count %>
+</p>
+
+<p>
+  <strong>Nine count:</strong>
+  <%= @score.nine_count %>
+</p>
+
+<%= link_to 'Edit', edit_score_path(@score), remote: true %> |
+<%= link_to 'Back', scores_path, remote: true %>

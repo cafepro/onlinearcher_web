@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<ul>
+  <li>
+    <%= link_to t('score.new').html_safe, new_score_path %>
+  </li>
+  <% @scores.each do |score| %>
+    <li>
+      <%= score.name %>
+      <%= score.score_type.name rescue 'Sesión libre' %>
+      <%= score.state %>
+      <%= score.published %>
+      <%= score.points %>
+      <%= score.average %>
+      <%= link_to t('score.puntuar').html_safe, puntuar_score_path(score), remote: true %>
+      <%= link_to t('main.show').html_safe, score, remote: true %>
+      <%= link_to t('main.edit').html_safe, edit_score_path(score) %>
+      <%= link_to t('main.destroy').html_safe, score, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </li>
+  <% end %>
+</ul>
+
+

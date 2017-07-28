@@ -1,0 +1,128 @@
+// Place all the styles related to the scores controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ @import './variables/variables';
+
+/*#cont_escalable { display:block; }
+@media only screen and (orientation:portrait){
+ #cont_escalable {  
+       -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+       -ms-transform: rotate(0deg);
+       transform: rotate(0deg);
+      }
+
+}
+@media only screen and (orientation:landscape){
+ #cont_escalable {  
+       -webkit-transform: rotate(90deg);
+       -moz-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+       -ms-transform: rotate(90deg);
+       transform: rotate(90deg);
+      }
+}*/
+
+#app-content {
+	.navbar-default {
+	  /* border-color: rgba(34, 34, 34, 0.05); */
+	  border-bottom: 1px solid $primary-color;
+	  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+	  background-color: #fff;
+	  -webkit-transition: all .35s;
+	  -moz-transition: all .35s;
+	  transition: all .35s;
+	}
+
+	.app-content {
+		margin-top:50px;
+		
+	}
+
+	.resetear, .finish {
+		position: absolute;
+	    width: 100%;
+	    height: 35vh;
+	    line-height: 50vh;
+	    top: 0;
+	    left: 0;
+	    background-color: #333333;
+	    opacity: 0.5;
+	    color: #CCC;
+	    font-size: 2em;
+	}
+	.finish { font-size: 18px; }
+
+	.keyboard{
+		position:fixed;
+		bottom:0;
+		height: 40vh;
+		width: 100vw;
+		background-color: $primary-color;
+		.arrow{
+			float:left;
+			width: 25vw;
+			text-align: center;
+			margin-top:2px;
+			.btn {
+				margin:auto;
+				height: 13vh;
+				width: 13vh;
+				line-height: 11vh;
+				background-color: $primary-color;
+				color: #FFF;
+				font-size:1.6em;
+				border-radius:50%;
+				/*border: 1px solid white;*/
+				&:hover{
+					background-color: darken($primary-color,5%);
+				}
+				&:active{
+					background-color: $primary-color;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+
+	.partial_score{
+		position: fixed;
+		bottom:40vh;
+		width: 100vw;
+		.arrow{
+			float:left;
+			width: 25vw;
+			text-align: center;
+			padding: 0 5px;
+		}
+		input {
+			background-color: #FFF;
+			width: 100%;
+			border: none;
+		    height: 50px;
+		    text-align: center;
+		    font-size:1.5em;
+		    &.borde {
+		    	border-bottom: 1px solid #999;
+		    }
+		}
+	}
+
+	#datos-score {
+		position:fixed;
+		width: 100vw;
+		text-align: center;
+	}
+
+	.navbar-default .navbar-toggle {
+		border:none;
+	}
+
+	#loading {
+		position: relative;
+	    float: right;
+	    top: 11px;
+	}
+}

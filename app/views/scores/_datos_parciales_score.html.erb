@@ -1,0 +1,34 @@
+
+<div id="datos-score">
+	<div class="row">
+		<div class="col-md-3">
+			<h4>
+				<div class="inline"><%= t 'score.anterior' %></div>
+				<div id="ronda_anterior" class="inline"><%= @score.puntos_ronda_anterior %></div>
+				<div class="inline"><%= t 'score.pts' %></div>
+			</h4>
+		</div>
+		<div class="col-md-10">
+			<h1>
+				<div id="acumulacion" class="inline"><%= @score.points %></div>
+				<div class="inline"><%= t 'score.pts' %></div>
+			</h1>
+		</div>
+		<div class="col-md-3">
+			<h4>
+				<div id="parcial" class="inline"><%= @score.parcial %></div>
+				<div class="inline"><%= t 'score.pts' %></div>
+			</h4>
+		</div>
+		<div class="col-md-3">
+			<h4>
+				<div class="inline"><%= t 'score.media' %></div>
+				<div id="media" class="inline"><%= @score.average %></div>
+				<div class="inline"><%= t 'score.pts' %></div>
+			</h4>
+		</div>
+
+
+	<%= link_to t('score.reset'), '#', on_click: 'resetear();', class: 'resetear hidden' %>
+	<%= link_to t('score.finished'), @score, class: 'finish hidden', remote: true %>
+</div>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @header.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @header.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @header.photo.url(:medium) %>
+</p>
+
+<%= link_to 'Edit', edit_header_path(@header) %> |
+<%= link_to 'Back', headers_path %>
